@@ -6,7 +6,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:dev:ci": "start-test web 19006 cy:open",
+    "test:ci": "start-test web 19006 cy:run"
   },
   "jest": {
     "preset": "jest-expo"
